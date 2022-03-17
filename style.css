@@ -1,0 +1,528 @@
+/** @format */
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: serif;
+}
+a {
+  color: white;
+}
+
+/* navbar */
+nav {
+  background: transparent;
+  height: 80px;
+  width: 100%;
+  padding: 0px 10px;
+}
+label.logo {
+  color: white;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 10px;
+  font-weight: bold;
+  position: sticky;
+}
+nav ul {
+  float: right;
+  margin-right: 10px;
+}
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a {
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+a.active {
+  background: #1b9bff;
+  transition: 0.5s;
+}
+.checkbtn {
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 10px;
+  cursor: pointer;
+  display: none;
+}
+#check {
+  display: none;
+}
+/* navbar */
+
+/* header */
+.main-container {
+  background-image: url("https://i.ibb.co/XDJNMKG/header.jpg");
+  background-color: #6dd8cf;
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  color: white;
+}
+
+.content-container {
+  width: 90%;
+  margin: auto;
+  padding: 100px 50px;
+  text-align: center;
+}
+.content-container p {
+  font-size: 20px;
+}
+.title {
+  color: white;
+
+  font-size: 80px;
+  margin: 10px;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+/* coursal */
+button {
+  border: none;
+}
+.btn1 {
+  color: white;
+  background-color: tomato;
+  padding: 15px 25px;
+  margin: 20px 0px;
+  border-radius: 50px;
+  font-size: 24px;
+  font-weight: bold;
+}
+/* header */
+
+/* programs */
+.programs {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: auto;
+  padding: 40px 10x;
+  text-align: center;
+  justify-content: center;
+}
+.program-content {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  margin: 20px 0px;
+}
+.program-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  width: 300px;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: multiply;
+
+  color: whitesmoke;
+}
+.program1 {
+  background-image: url("https://i.ibb.co/RBknkSR/pg1.webp");
+  background-color: rgb(109, 109, 109);
+}
+.program2 {
+  background-image: url("https://i.ibb.co/HpfYCJy/2.jpg");
+  background-color: rgb(92, 180, 180);
+}
+.program3 {
+  background-image: url("https://i.ibb.co/dBjz1yt/pg3.webp");
+  background-color: rgb(6, 185, 209);
+}
+.program4 {
+  background-image: url("https://i.ibb.co/6vDXJTz/pg4.webp");
+  background-color: rgb(235, 179, 76);
+}
+.program-btn {
+  padding: 10px 20px;
+  margin: 20px;
+  background-color: transparent;
+  cursor: pointer;
+  border: 5px solid whitesmoke;
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+  border-radius: 50px;
+}
+.program-head {
+  font-size: 2em;
+  padding: 5px;
+  margin: 5px;
+}
+.prog-desc {
+  font-size: 18px;
+  padding: 5px;
+  margin: 5px;
+}
+.heading1 {
+  padding: 10px;
+  margin: 20px;
+}
+#counter,
+#counter1,
+#counter2,
+#counter3 {
+  font-size: 80px;
+
+  color: #bbb;
+  font-weight: bold;
+  padding: 10px 15px;
+}
+.counter-inner div {
+  border-bottom: 3px solid brown;
+}
+.counter-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px;
+}
+sup {
+  font-size: 30px;
+  color: #fafafa;
+  font-weight: bold;
+}
+.counter-desc {
+  font-size: 20px;
+  color: white;
+  padding: 10px;
+  margin: 10px 5px;
+}
+.choose-us {
+  background-image: url("http://dslv9ilpbe7p1.cloudfront.net/eS63RLbKSLZn6vRBA66kVw_store_banner_image.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #313131;
+  background-blend-mode: multiply;
+  text-align: center;
+  color: white;
+  padding: 20px;
+}
+
+/* modal-container */
+.modal-container {
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  margin: 0;
+  pointer-events: none;
+  width: 100vw;
+  height: 100vh;
+}
+.modal-container.show {
+  pointer-events: all;
+  opacity: 1;
+  transition: 0.4s ease-in-out;
+}
+
+.modal {
+  background-color: #fff;
+  text-align: center;
+  border-radius: 10px;
+  height: fit-content;
+  color: black;
+  padding: 30px 20px;
+  width: 600px;
+  max-width: 100%;
+  margin: 20px;
+}
+.modal h1 {
+  padding: 10px;
+  text-transform: capitalize;
+}
+.modal p {
+  opacity: 0.8;
+  font-size: 18px;
+  margin: 5px;
+}
+.close-btn {
+  padding: 10px 20px;
+  border-radius: 25px;
+  border: 5px solid grey;
+  font-size: 24px;
+  font-weight: 800;
+  background: whitesmoke;
+  color: #305c88;
+}
+
+/* modal-contaier end */
+
+/* programs */
+/* plans */
+.plans-container {
+  display: flex;
+}
+.plan-item {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 40px 10px;
+
+  margin: 10px;
+  color: white;
+}
+.plan-item:hover {
+  transform: scale(1.05);
+}
+.plan-bg1 {
+  background-image: url("https://img.freepik.com/free-photo/black-paper-texture-closeup-high-resolution-photo_463999-1373.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #7ba9d8;
+  background-blend-mode: multiply;
+}
+.plan-bg2 {
+  background-image: url("https://img.freepik.com/free-photo/black-paper-texture-closeup-high-resolution-photo_463999-1373.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #7ba9d8;
+
+  background-blend-mode: multiply;
+}
+.plan-bg3 {
+  background-image: url("https://img.freepik.com/free-photo/black-paper-texture-closeup-high-resolution-photo_463999-1373.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #a5dbf1;
+
+  background-blend-mode: multiply;
+}
+/* plans */
+
+/* reviews */
+.reviews {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: auto;
+  text-align: center;
+  padding: 20px 0px;
+}
+
+.reveiw-card {
+  background-image: url("https://wallpaperaccess.com/full/1808239.jpg");
+  background-color: #747474;
+  background-blend-mode: multiply;
+  width: 80%;
+  margin: auto;
+  height: 300px;
+  padding: 20px;
+  border-radius: 20px;
+  color: white;
+}
+.review-image {
+  height: 100px;
+  width: 100px;
+  border: 1px solid grey;
+  border-radius: 30px;
+}
+.card-desc {
+  font-size: 20px;
+  color: #bbb;
+}
+
+/* reviews */
+.contact {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px 10px;
+  padding: 100px 20px;
+  color: white;
+  height: 100vh;
+}
+.contact-container {
+  background-image: url("https://i.ibb.co/qxCFQXP/footer.webp");
+  background-size: cover;
+  background-color: #313131;
+  background-blend-mode: multiply;
+}
+.footer {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px 10px;
+  background-image: url("https://i.ibb.co/qxCFQXP/footer.webp");
+  background-size: cover;
+  background-color: #313131;
+  background-blend-mode: multiply;
+  padding: 20px;
+  color: white;
+}
+
+.footer-item {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  padding: 10px;
+}
+.footer-head {
+  margin-bottom: 20px;
+}
+.timing {
+  padding: 10px 0px;
+}
+#footer-link {
+  color: white;
+
+  margin: 10px;
+  font-size: 20px;
+}
+.social-icon {
+  color: white;
+  font-size: 30px;
+  padding: 5px;
+  margin: 10px;
+}
+.icon-container {
+  margin-top: 20px;
+}
+.contact-item {
+  margin-bottom: 15px;
+}
+.links a {
+  color: rgb(17, 112, 112);
+  font-weight: 700;
+}
+
+@media (max-width: 952px) {
+  label.logo {
+    font-size: 30px;
+    padding-left: 5px;
+  }
+  nav ul li a {
+    font-size: 16px;
+  }
+}
+.footer-end {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  color: white;
+  background-color: #313131;
+  text-align: center;
+}
+.links {
+  display: inline-block;
+  color: white;
+  font-size: 20px;
+}
+@media (max-width: 858px) {
+  .checkbtn {
+    display: block;
+  }
+
+  ul {
+    position: fixed;
+    width: 100%;
+    opacity: 1;
+    height: 100vh;
+    background-image: url(https://img.freepik.com/free-photo/black-paper-texture-closeup-high-resolution-photo_463999-1373.jpg);
+    background-color: #7ba9d8;
+    background-blend-mode: multiply;
+    background-size: cover;
+    top: 80px;
+
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a {
+    font-size: 20px;
+  }
+  a:hover,
+  a.active {
+    background: none;
+    color: #0082e6;
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
+  .program-content,
+  .counter-container,
+  .plans-container,
+  .footer,
+  .contact,
+  .review-container {
+    flex-direction: column;
+    padding: 10px 10px;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+  .main-container {
+    background-image: url("https://i.ibb.co/3WpgMWm/header-bg-img.jpg");
+  }
+  .content-container {
+    width: 100%;
+    padding: 50px 20px;
+  }
+  .title {
+    font-size: 55px;
+  }
+  .programs {
+    padding: 0px;
+  }
+  .program-item {
+    margin-bottom: 10px;
+  }
+  .footer-head {
+    text-align: center;
+    padding: 15px 0px;
+    border-bottom: 2px solid grey;
+    border-top: 2px solid grey;
+  }
+  .footer-end {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .footer-end p {
+    padding-top: 20px;
+  }
+  .reveiw-card {
+    width: 100%;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 20px;
+    height: 450px;
+  }
+}
